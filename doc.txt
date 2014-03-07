@@ -1,0 +1,28 @@
+Styles:
+- The css folder includes the original styles, plus a /scss folder and a /compiled folder.
+- The generated styles from the scss folder are located in /compiled and are the same as the normal .css files.
+- The css/lib folder includes the styles for the plugins
+
+Scripts:
+- The javascript code specifically for each page is included before the closing </body> tag of each, rather than putting everything on a single .js file
+
+
+Bootstrap:
+- Changed native bootstrap styles are located in css/bootstrap/bootstrap-overrides.css
+- New theme elements styles like flat buttons, glow buttons, etc are located in css/elements.css
+
+
+Things to have in mind:
+if you move the bootstrap files from folder location, verify the correct glyphicons icons relative path.
+
+
+New controls:
+- This template includes new kinds of buttons: 'flat' and 'glow' with their own classes for different colors.
+- The options can be seen in css/elements.css or by looking at the html source, also both have the .small and .large versions.
+
+
+Pages:
+- the main layout has the main navigation on the sidebar, and on personal-info.html you can see an alternative layout showing the main nav on the top.
+- icons.html showcases some of the font awesome icons, but the template does include all from http://fortawesome.github.io/Font-Awesome/
+- signin.html shows one kind of style with blurred backgrounds
+- signup.html show a more formal style so you can choose which one you prefer.

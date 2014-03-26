@@ -1,0 +1,106 @@
+// Imports all SCSS 
+
+@import 'calendar.scss';
+@import 'chart-showcase.scss';
+@import 'elements.scss';
+
+// Custom CSS need to break out later
+
+
+
+// Type
+
+h1, h2, h3, h4 {
+	margin-bottom: 20px;
+}
+
+.hero h1, p {
+	color: #f9f9f9;
+}
+
+// Hero
+
+.hero p {
+	font-size: 18px;
+}
+
+.home {
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+
+body {
+	background: url('../img/hero-bg.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+// Navbar
+
+.navbar-inverse {
+	background: #131313;
+	min-height: 72px;
+}
+
+.nav {
+	color: #818181;
+
+	a {
+		color: #6e6e6e;
+		font-size: 1.2em;
+
+		&:hover {
+			color: #33b5e5 !important;
+		}
+	}
+
+	li.active-page a {
+		color: #33b5e5 !important;
+	}
+}
+
+.navbar-inverse .nav > li > a {
+	padding: 6px 15px 1px;
+	
+	
+}
+
+.navbar-inverse .nav > li:first-child {
+		border-left: 1px solid #333333;
+	}
+
+.navbar .nav {
+	margin: 18px 10px 0 0;
+}
+
+// Sidebar 
+
+#sidebar-nav {
+	padding-top: 3em;
+}
+
+#dashboard-menu > li > a {
+	font-size: 1.2em;
+	color: #686868;
+	border-bottom: none;
+	//border-bottom: 1px solid #dae1e8;
+	//box-shadow: 0 2px 1px -1px #FFFFFF;
+	box-shadow: none;
+	padding: 10px 14px 15px 14px;
+
+	span {
+			margin-left: 1px;
+	}
+}
+
+#dashboard-menu > li.active a {
+	text-shadow: none;
+}
+
+#dashboard-menu > li.active > a, #dashboard-menu > li > a:hover {
+	color: #33b5e5;
+	text-decoration: none;
+}

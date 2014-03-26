@@ -1,9 +1,5 @@
 /* Some overrides from default bootstrap styles */
 
-h1,h2,h3,h4,h5,h6{
-	font-weight: normal;
-}
-
 /* COMPONENTS */
 
 
@@ -187,15 +183,6 @@ textarea::-webkit-input-placeholder {
 .navbar-inverse .navbar-inner {
 	border-radius: 0px;
 	border-bottom: 1px solid #191e23;
-
-	background: #2c3742; /* Old browsers */
-	background: -moz-linear-gradient(top,  #2c3742 0%, #28303a 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2c3742), color-stop(100%,#28303a)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #2c3742 0%,#28303a 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #2c3742 0%,#28303a 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #2c3742 0%,#28303a 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #2c3742 0%,#28303a 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c3742', endColorstr='#28303a',GradientType=0 ); /* IE6-9 */
 }
 .navbar-inverse .btn-navbar {
 	float: left;
@@ -213,7 +200,6 @@ textarea::-webkit-input-placeholder {
 .navbar-inverse .nav > li > a {
 	padding: 13px 15px 8px;
 	border-left: 1px solid #101417;
-	color: rgb(214, 214, 214);
 	outline: 0px;
 	height: 25px;
 	transition: background .1s linear;
@@ -222,11 +208,9 @@ textarea::-webkit-input-placeholder {
 	-o-transition: background .1s linear;  /* Opera */
 }
 .navbar-inverse .nav > li > a:hover {
-	background: rgba(25, 31, 36,0.6);
 }
 /* TODO: deprecated mobile-menu, ya no se usa, remover despues de migrar todos los htmls al nuevo diseno */
 .navbar-inverse .mobile-menu .nav > li > a {
-	color: #fff;
 	border-left: 0px;
 }
 .dropdown-menu > li > a:hover,

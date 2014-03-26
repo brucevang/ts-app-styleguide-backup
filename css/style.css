@@ -148,13 +148,7 @@
 
 h1, h2, h3, h4 { margin-bottom: 20px; }
 
-.hero h1, p { color: #f9f9f9; }
-
 .hero p { font-size: 18px; }
-
-.home { background: none; border: none; box-shadow: none; }
-
-body { background: url("../img/hero-bg.png") no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
 .navbar-inverse { background: #131313; min-height: 72px; }
 
@@ -174,6 +168,6 @@ body { background: url("../img/hero-bg.png") no-repeat center center fixed; -web
 #dashboard-menu > li > a { font-size: 1.2em; color: #686868; border-bottom: none; box-shadow: none; padding: 10px 14px 15px 14px; }
 #dashboard-menu > li > a span { margin-left: 1px; }
 
-#dashboard-menu > li.active a { text-shadow: none; }
+#dashboard-menu > li.active a { text-shadow: none; font-weight: normal !important; }
 
 #dashboard-menu > li.active > a, #dashboard-menu > li > a:hover { color: #33b5e5; text-decoration: none; }

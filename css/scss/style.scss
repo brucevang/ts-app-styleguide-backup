@@ -15,7 +15,7 @@ h1, h2, h3, h4 {
 }
 
 .hero h1, p {
-	color: #f9f9f9;
+	// color: #f9f9f9;
 }
 
 // Hero
@@ -25,18 +25,8 @@ h1, h2, h3, h4 {
 }
 
 .home {
-	background: none;
-	border: none;
-	box-shadow: none;
 }
 
-body {
-	background: url('../img/hero-bg.png') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 // Navbar
 
@@ -96,8 +86,11 @@ body {
 	}
 }
 
+
+
 #dashboard-menu > li.active a {
 	text-shadow: none;
+	font-weight: normal !important;
 }
 
 #dashboard-menu > li.active > a, #dashboard-menu > li > a:hover {

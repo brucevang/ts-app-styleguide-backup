@@ -71,6 +71,18 @@ $(function () {
     }
   });
 
+  // sidebar sub-menu dropdown toggle
+  $("#dashboard-menu .sub-dropdown-toggle").click(function (e) {
+    e.preventDefault();
+    var $item = $(this).parent();
+    $item.toggleClass("active");
+    if ($item.hasClass("active")) {
+      $item.find(".sub-submenu").slideDown("fast");
+    } else {
+      $item.find(".sub-submenu").slideUp("fast");
+    }
+  });
+
 
   // mobile side-menu slide toggler
   var $menu = $("#sidebar-nav");

@@ -1,12 +1,14 @@
 // Imports all SCSS 
 
+/*
 @import 'calendar.scss';
 @import 'chart-showcase.scss';
 @import 'elements.scss';
+*/
 
 // Custom CSS need to break out later
 
-
+// Turn Off Resonsive Design
 
 // Type
 
@@ -59,11 +61,19 @@ h1, h2, h3, h4 {
 }
 
 .navbar-inverse .nav > li:first-child {
-		border-left: 1px solid #333333;
+		// border-left: 1px solid #333333;
 	}
 
 .navbar .nav {
 	margin: 18px 10px 0 0;
+}
+
+.navbar-inner {
+	border: none;
+}
+
+.navbar-inverse .navbar-inner {
+	border: none;
 }
 
 // Sidebar 
@@ -97,3 +107,75 @@ h1, h2, h3, h4 {
 	color: #33b5e5;
 	text-decoration: none;
 }
+
+#dashboard-menu ul.submenu {
+	padding-left: 22px;
+}
+
+
+/* sidebar submenus 
+		> li.active .dropdown-toggle {
+			border-bottom: 0px;
+			box-shadow: none;
+		}
+		ul.submenu {
+			list-style-type: none;
+			display: none;
+			margin-top: 7px;
+			margin-bottom: 15px;
+			margin-right: 5px;
+			margin-left: -15px;
+			padding-left: 15px;
+			border-bottom: 1px solid #dae1e8;
+			box-shadow: 0 2px 1px -1px #FFFFFF;
+			padding-bottom: 10px;
+			&.active {
+				display: block;
+			}
+			a {
+				font-weight: normal;
+				font-size: 13px;
+				color: rgb(76, 83, 90);
+				text-decoration: none;
+				display: block;
+				margin-bottom: 7px;
+				&:hover {
+					text-decoration: underline;
+				}
+				&.active {
+					font-weight: bold;
+					text-shadow: none;
+				}
+			}*/
+
+			ul.sub-submenu {
+			list-style-type: none;
+			display: none;
+			margin-top: 7px;
+			margin-bottom: 15px;
+			margin-right: 5px;
+			//margin-left: -15px;
+			margin-left: -37px;
+			padding-left: 15px;
+			border-bottom: 1px solid #dae1e8;
+			box-shadow: 0 2px 1px -1px #FFFFFF;
+			padding-bottom: 10px;
+			&.active {
+				display: block;
+			}
+			a {
+				font-weight: normal;
+				font-size: 13px;
+				color: rgb(76, 83, 90);
+				text-decoration: none;
+				display: block;
+				margin-bottom: 7px;
+				&:hover {
+					text-decoration: underline;
+				}
+				&.active {
+					font-weight: bold;
+					text-shadow: none;
+				}
+			}
+		}

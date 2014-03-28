@@ -4,9 +4,8 @@ var app = angular.module('tsAppGuide', ['ngRoute']);
 
   
 app.config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'main.html',
+    $routeProvider.when('/', {
+        templateUrl: 'views/main.html',
         controller: 'mainController'
       })
 
@@ -20,15 +19,19 @@ app.config(function ($routeProvider) {
       });
 
 
+
+
 app.controller('mainController', [function($scope) {
      $scope.model = {
         message: "This is my app!!!"
     }
-  }])
+}])
   
 app.controller('typographyController', [function() {
 
-  }]);
+}]);
+
+// $locationProvider.html5Mode(true);
 
 });
 

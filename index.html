@@ -37,11 +37,14 @@
     <!-- lato font -->
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
+    
+    
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
 </head>
-<body>
+<body ng-app="tsAppGuide">
 
     <!-- navbar -->
     <div class="navbar navbar-inverse">
@@ -73,26 +76,28 @@
 
     <!-- sidebar -->
     <div id="sidebar-nav">
+        <!--<nav class="{{active}}" ng-click="$event.preventDefault()">-->
+        <nav class="{{active}}">
         <ul id="dashboard-menu">
-            <li class="active">
+            <li ng-click="active='get-started'">
                 <!--<div class="pointer">
                     <div class="arrow"></div>
                     <div class="arrow_border"></div>
                 </div>
                 -->
-                <a href="#">
+                <a class="get-started" href="#">
                     <span>Get Started</span>
                 </a>
             </li>            
             <li>
-                <a class="dropdown-toggle" href="#">
+                <a ng-click="active='app-style'" class="app-style dropdown-toggle" href="#">
                     <span>App Style</span>
                     <i class="icon-chevron-down"></i>
                 </a>
                 
                 <ul class="submenu languages">
                     <li>
-                        <a class="sub-dropdown-toggle" href="#">HTML<i class="icon-chevron-down"></i></a>
+                        <a ng-click="active='html'" class="sub-dropdown-toggle html" href="#">HTML<i class="icon-chevron-down"></i></a>
                             <ul class="sub-submenu">
                                 <li>
                                     <a href="#">
@@ -116,7 +121,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="typography.html">
+                                    <a class="h-typography" href="#typography" ng-click="active='h-typography'">
                                         <span>Typography</span> 
                                     </a>
                                 </li>
@@ -166,7 +171,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="typography.html">
+                                    <a href="#">
                                         <span>Typography</span> 
                                     </a>
                                 </li>
@@ -212,34 +217,37 @@
                 </a>
             </li>
         </ul>
+        </nav>
     </div>
     <!-- end sidebar -->
 
 
-	<!-- main container -->
-    <div class="content home">
-        <div class="container-fluid">
-            <div id="pad-wrapper">
-            <div class="hero">
-                <h1>TradingApp Store</h1>
-                <p>A virtually endless supply of new ideas and
-                trading tools. Explore the store today and discover how</br>
-                TradingApps can transform the way you trade.</p>
+   
+       <div ng-view=""></div>
 
-                <img src="img/hero-apps.png">
-
-            <center><h2>Built by traders, for traders.</h2></center>
-            </div>
-
-            </div>
-        </div>
+    <!-- test
+    <div ng-controller="testCtrl">
+       {{ helloMessage }}
     </div>
+    -->
 
+    <!-- AngularJS injects page views here-->
+    
 
 	<!-- scripts -->
+   
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-ui-1.10.2.custom.min.js"></script>
+    <!-- Add AngularJS Stable-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+    <!-- AngularJS -->
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+
+
+    <script src="js/bootstrap.min.js"></script>
+
     <!-- knob -->
     <script src="js/jquery.knob.js"></script>
     <!-- flot charts -->
@@ -248,6 +256,13 @@
     <script src="js/jquery.flot.resize.js"></script>
     <script src="js/theme.js"></script>
 
+    
+    <!--
+    <script src="js/services.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/directives.js"></script>
+    -->
+    
     <script type="text/javascript">
         $(function () {
 

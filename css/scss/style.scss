@@ -29,6 +29,10 @@ h1, h2, h3, h4 {
 .home {
 }
 
+body {
+	// font-family: 'proxima-nova';
+}
+
 
 // Navbar
 
@@ -78,6 +82,8 @@ h1, h2, h3, h4 {
 
 // Sidebar 
 
+
+
 #sidebar-nav {
 	padding-top: 3em;
 }
@@ -104,8 +110,13 @@ h1, h2, h3, h4 {
 }
 
 #dashboard-menu > li.active > a, #dashboard-menu > li > a:hover {
-	color: #33b5e5;
+	//color: #33b5e5;
 	text-decoration: none;
+}
+
+// To set active class color
+nav.get-started .get-started, nav.html .html, nav.h-typography .h-typography, nav.contact .contact {
+	color: #33b5e5 !important;
 }
 
 #dashboard-menu ul.submenu {
@@ -151,6 +162,10 @@ h1, h2, h3, h4 {
 			//languages displays block for HTML/EL
 			.languages {
 				display: block !important;
+			}
+
+			ul.submenu {
+				margin-top: -9px !important;
 			}
 
 			ul.sub-submenu {

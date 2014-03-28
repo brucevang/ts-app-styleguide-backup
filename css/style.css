@@ -43,7 +43,7 @@ body { font-family: 'proxima_nova_rgregular', 'Open Sans', 'Arial'; }
 
 #dashboard-menu > li.active > a, #dashboard-menu > li > a:hover { text-decoration: none; }
 
-nav.get-started .get-started, nav.html .html, nav.h-typography .h-typography, nav.contact .contact { color: #33b5e5 !important; }
+nav.get-started .get-started, nav.app-style .app-style, nav.html .html, nav.h-devices .h-devices, nav.h-standards .h-standards, nav.h-branding .h-branding, nav.h-grids .h-grids, nav.h-typography .h-typography, nav.h-colors .h-colors, nav.h-iconography .h-iconography, nav.h-templates .h-templates, nav.h-tools .h-tools, nav.contact .contact { color: #33b5e5 !important; }
 
 #dashboard-menu ul.submenu { padding-left: 22px; }
 

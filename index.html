@@ -34,20 +34,11 @@
     <!-- open sans font -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-    <!-- lato font -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-
-    <!-- Proxima Nova Fonts -->
-
-
-
-
-    
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
 </head>
+
 <body ng-app="tsAppGuide">
 
     <!-- navbar -->
@@ -87,7 +78,7 @@
     <!-- sidebar -->
     <div id="sidebar-nav">
         <!--<nav class="{{active}}" ng-click="$event.preventDefault()">-->
-        <nav class="{{active}}">
+        <nav class="{{active}}" >
         <ul id="dashboard-menu">
             <li ng-click="active='get-started'">
                 <!--<div class="pointer">
@@ -107,57 +98,57 @@
                 
                 <ul class="submenu languages">
                     <li>
-                        <a ng-click="active='html'" class="sub-dropdown-toggle html" href="#">HTML<i class="icon-chevron-down"></i></a>
+                        <a ng-click="active='html'" class="sub-dropdown-toggle html" href="#/html">HTML<i class="icon-chevron-down"></i></a>
                             <ul class="sub-submenu">
                                 <li>
-                                    <a href="#">
+                                    <a ng-click="active='h-devices'" class="h-devices" href="#/html/devices">
                                         <span>Devices</span> 
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#">
+                                    <a ng-click="active='h-standards'" class="h-standards" href="#/html/standards">
                                         <span>Standards</span> 
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a ng-click="active='h-branding'" class="h-branding" href="#/html/branding">
                                         <span>Branding</span> 
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a ng-click="active='h-grids'" class="h-grids" href="#/html/grids">
                                         <span>Grids</span> 
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="h-typography" href="#typography" ng-click="active='h-typography'">
+                                    <a ng-click="active='h-typography'" href="#/html/typography" class="h-typography">
                                         <span>Typography</span> 
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a ng-click="active='h-colors'" class="h-colors" href="#/html/colors">
                                         <span>Colors</span> 
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a ng-click="active='h-iconography'" class="h-iconography" href="#/html/iconography">
                                         <span>Iconography</span> 
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a ng-click="active='h-templates'" class="h-templates "href="#/html/templates">
                                         <span>Templates</span> 
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a ng-click="active='h-tools'" class="h-tools" href="#/html/tools">
                                         <span>Tools</span> 
                                     </a>
                                 </li>
                             </ul>
                     </li>
-                    <li><a class="sub-dropdown-toggle" href="#">EasyLanguage <i class="icon-chevron-down"></i></a>
+                    <li><a class="sub-dropdown-toggle" href="#/easylanguage">EasyLanguage <i class="icon-chevron-down"></i></a>
                         <ul class="sub-submenu">
                                 <li>
                                     <a href="#">
@@ -166,7 +157,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="#">
+                                    <a href="#/easylanguage">
                                         <span>Standards</span> 
                                     </a>
                                 </li>
@@ -216,8 +207,8 @@
                     <i class="icon-chevron-down"></i>
                 </a>
                 <ul class="submenu">
-                    <li><a href="#">Form showcase</a></li>
-                    <li><a href="#">Form wizard</a></li>
+                    <li><a href="#">Logos</a></li>
+                    <li><a href="#">Icons</a></li>
                 </ul>
             </li>
             <li>
@@ -232,8 +223,15 @@
     <!-- end sidebar -->
 
 
-   
-       <div ng-view=""></div>
+    <div class="content home">
+        <div class="container-fluid">
+            <div id="pad-wrapper">
+                <div class="hero">
+                    <div ng-view=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- test
     <div ng-controller="testCtrl">
@@ -245,7 +243,6 @@
     
 
 	<!-- scripts -->
-   
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/jquery-ui-1.10.2.custom.min.js"></script>
     <!-- Add AngularJS Stable-->
@@ -279,8 +276,6 @@
             // jQuery Knobs
             $(".knob").knob();
 
-
-
             // jQuery UI Sliders
             $(".slider-sample1").slider({
                 value: 100,
@@ -301,7 +296,6 @@
             });
 
             
-
             // jQuery Flot Chart
             var visits = [[1, 50], [2, 40], [3, 45], [4, 23],[5, 55],[6, 65],[7, 61],[8, 70],[9, 65],[10, 75],[11, 57],[12, 59]];
             var visitors = [[1, 25], [2, 50], [3, 23], [4, 48],[5, 38],[6, 40],[7, 47],[8, 55],[9, 43],[10,50],[11,47],[12, 39]];

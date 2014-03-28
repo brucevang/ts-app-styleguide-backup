@@ -6,7 +6,7 @@
 @import 'elements.scss';
 */
 
-// Custom CSS need to break out later
+// TODO: Custom CSS need to break out later
 
 // Turn Off Resonsive Design
 
@@ -178,7 +178,7 @@ body {
 }
 
 // To set active class color
-nav.get-started .get-started, nav.html .html, nav.h-typography .h-typography, nav.contact .contact {
+nav.get-started .get-started, nav.app-style .app-style, nav.html .html, nav.h-devices .h-devices, nav.h-standards .h-standards, nav.h-branding .h-branding,  nav.h-grids .h-grids, nav.h-typography .h-typography, nav.h-colors .h-colors, nav.h-iconography .h-iconography, nav.h-templates .h-templates, nav.h-tools .h-tools,  nav.contact .contact {
 	color: #33b5e5 !important;
 }
 

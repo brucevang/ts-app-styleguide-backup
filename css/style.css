@@ -17,6 +17,8 @@ h1, h2, h3, h4 { font-family: 'proxima_nova_rgbold', 'Open Sans', 'Arial'; margi
 
 .hero p { font-size: 18px; }
 
+p { font-size: 15px; }
+
 body { font-family: 'proxima_nova_rgregular', 'Open Sans', 'Arial'; }
 
 .navbar-inverse { background: #131313; min-height: 72px; }
@@ -43,7 +45,7 @@ body { font-family: 'proxima_nova_rgregular', 'Open Sans', 'Arial'; }
 
 #dashboard-menu > li.active > a, #dashboard-menu > li > a:hover { text-decoration: none; }
 
-nav.get-started .get-started, nav.app-style .app-style, nav.html .html, nav.h-devices .h-devices, nav.h-standards .h-standards, nav.h-branding .h-branding, nav.h-grids .h-grids, nav.h-typography .h-typography, nav.h-colors .h-colors, nav.h-iconography .h-iconography, nav.h-templates .h-templates, nav.h-tools .h-tools, nav.contact .contact { color: #33b5e5 !important; }
+nav.get-started .get-started, nav.app-style .app-style, nav.html .html, nav.h-devices .h-devices, nav.h-standards .h-standards, nav.h-branding .h-branding, nav.h-grids .h-grids, nav.h-typography .h-typography, nav.h-colors .h-colors, nav.h-iconography .h-iconography, nav.h-templates .h-templates, nav.h-tools .h-tools, nav.contact .contact, nav.winforms .winforms { color: #33b5e5 !important; }
 
 #dashboard-menu ul.submenu { padding-left: 22px; }
 

@@ -54,8 +54,8 @@ app.config(function ($routeProvider) {
         controller: 'typographyController'
       })
 
-      .when('/easylanguage/', {
-        templateUrl: 'views/easylanguage.html',
+      .when('/winforms/', {
+        templateUrl: 'views/winforms.html',
         controller: 'typographyController'
       })
 

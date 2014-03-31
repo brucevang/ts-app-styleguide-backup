@@ -148,19 +148,14 @@
                                 </li>
                             </ul>
                     </li>
-                    <li><a class="sub-dropdown-toggle" href="#/easylanguage">EasyLanguage <i class="icon-chevron-down"></i></a>
-                        <ul class="sub-submenu">
+                    <li><a ng-click="active='winforms'" class="winforms" href="#/winforms">Winforms <!--<i class="icon-chevron-down"></i>--></a>
+                        <!--<ul class="sub-submenu">
                                 <li>
-                                    <a href="#">
-                                        <span>Devices</span> 
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#/easylanguage">
+                                    <a href="#/winforms">
                                         <span>Standards</span> 
                                     </a>
                                 </li>
+                                <!--
                                 <li>
                                     <a href="#">
                                         <span>Branding</span> 
@@ -196,11 +191,14 @@
                                         <span>Tools</span> 
                                     </a>
                                 </li>
+                                
                             </ul>
+                        -->
                     </li>
                 </ul>
 
             </li> <!-- End first menu Item -->
+            <!--
             <li>
                 <a class="dropdown-toggle" href="#">
                     <span>Downloads</span>
@@ -217,6 +215,7 @@
                     <i class="icon-chevron-down"></i>
                 </a>
             </li>
+            -->
         </ul>
         </nav>
     </div>
@@ -226,9 +225,7 @@
     <div class="content home">
         <div class="container-fluid">
             <div id="pad-wrapper">
-                <div class="hero">
                     <div ng-view=""></div>
-                </div>
             </div>
         </div>
     </div>

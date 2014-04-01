@@ -103,6 +103,32 @@ body {
 
 // Navbar
 
+i.icon-chevron-down {
+	
+	-ms-transform:rotate(-90deg);
+	-moz-transform:rotate(0deg); 
+	-webkit-transform: rotate(-90deg);
+	transform:rotate(-90deg);
+
+	-ms-transition: transform 0.5s ease-in;
+	-moz-transition: transform 0.5s ease-in;
+	-webkit-transition: transform 0.5s ease-in;
+	transition: transform 0.5s ease-in;
+}
+
+li.active i.icon-chevron-down {
+
+	-ms-transform:rotate(0deg); 
+	-moz-transform:rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transform:rotate(0deg);
+
+	-ms-transition: transform 0.5s ease-in;
+	-moz-transition: transform 0.5s ease-in;
+	-webkit-transition: transform 0.5s ease-in;
+	transition: transform 0.5s ease-in;
+}
+
 .navbar-inverse {
 	background: #131313;
 	min-height: 72px;
@@ -162,7 +188,7 @@ body {
 	//border-bottom: 1px solid #dae1e8;
 	//box-shadow: 0 2px 1px -1px #FFFFFF;
 	box-shadow: none;
-	padding: 10px 14px 15px 14px;
+	padding: 3px 14px 9px 14px;
 
 	span {
 			margin-left: 1px;

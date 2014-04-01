@@ -514,15 +514,15 @@ input.search{
 /* responsive */
 @media (max-width: 1020px) {
 	.content {
-		margin-left: 65px;
+		margin-left: 133px;
 	}
 	#dashboard-menu {
-		margin-left: 5px;
+//		margin-left: 5px;
 		.pointer {
-			display: none;
+//			display: none;
 		}
 		li a span {
-			visibility: hidden;
+//			visibility: hidden;
 		}
 	}
 }

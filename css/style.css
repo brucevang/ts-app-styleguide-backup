@@ -21,6 +21,10 @@ p { font-size: 15px; }
 
 body { font-family: 'proxima_nova_rgregular', 'Open Sans', 'Arial'; }
 
+i.icon-chevron-down { -ms-transform: rotate(-90deg); -moz-transform: rotate(0deg); -webkit-transform: rotate(-90deg); transform: rotate(-90deg); -ms-transition: transform 0.5s ease-in; -moz-transition: transform 0.5s ease-in; -webkit-transition: transform 0.5s ease-in; transition: transform 0.5s ease-in; }
+
+li.active i.icon-chevron-down { -ms-transform: rotate(0deg); -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); -ms-transition: transform 0.5s ease-in; -moz-transition: transform 0.5s ease-in; -webkit-transition: transform 0.5s ease-in; transition: transform 0.5s ease-in; }
+
 .navbar-inverse { background: #131313; min-height: 72px; }
 
 .nav { color: #818181; }
@@ -38,7 +42,7 @@ body { font-family: 'proxima_nova_rgregular', 'Open Sans', 'Arial'; }
 
 #sidebar-nav { padding-top: 3em; }
 
-#dashboard-menu > li > a { font-size: 1.2em; color: #686868; border-bottom: none; box-shadow: none; padding: 10px 14px 15px 14px; }
+#dashboard-menu > li > a { font-size: 1.2em; color: #686868; border-bottom: none; box-shadow: none; padding: 3px 14px 9px 14px; }
 #dashboard-menu > li > a span { margin-left: 1px; }
 
 #dashboard-menu > li.active a { text-shadow: none; font-weight: normal !important; }

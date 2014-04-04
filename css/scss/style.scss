@@ -292,3 +292,31 @@ nav.get-started .get-started, nav.app-style .app-style, nav.html .html, nav.h-de
 				}
 			}
 		}
+
+.navbar-inverse .brand {
+	margin-top: 8px;
+	@extend .fade;
+}
+
+.btn-easy-language {
+	@extend .fade;
+}
+
+.btn-html {
+	margin-left: 75px;
+	@extend .fade;
+}
+
+
+// Animations
+
+.fade {
+   opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+
+   .fade:hover {
+      opacity: 0.8;
+    }

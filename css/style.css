@@ -96,3 +96,11 @@ ul.sub-submenu.active { display: block; }
 ul.sub-submenu a { font-weight: normal; font-size: 13px; color: #4c535a; text-decoration: none; display: block; margin-bottom: 7px; }
 ul.sub-submenu a:hover { text-decoration: underline; }
 ul.sub-submenu a.active { font-weight: bold; text-shadow: none; }
+
+.navbar-inverse .brand { margin-top: 8px; }
+
+.btn-html { margin-left: 75px; }
+
+.fade, .navbar-inverse .brand, .btn-easy-language, .btn-html { opacity: 1; transition: opacity .25s ease-in-out; -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; }
+
+.fade:hover, .navbar-inverse .brand:hover, .btn-easy-language:hover, .btn-html:hover { opacity: 0.8; }

@@ -9,6 +9,16 @@ app.config(function ($routeProvider) {
         controller: 'mainController'
       })
 
+      .when('/getting-started', {
+        templateUrl: 'views/getting-started.html',
+        controller: 'typographyController'
+      })    
+
+      .when('/html', {
+        templateUrl: 'views/html.html',
+        controller: 'typographyController'
+      })   
+
       .when('/html/devices', {
         templateUrl: 'views/html/devices.html',
         controller: 'typographyController'
